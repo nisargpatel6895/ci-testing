@@ -1,19 +1,19 @@
 ---
 version: 2
 jobs:
-  pr_check:
-    docker:
-      - image: circleci/node:12.14.1
-    steps:
+	pr_check:
+		docker:
+			- image: circleci/node:12.14.1
+		steps:
 			- checkout
 			- run:
 					name: npm build
 					command: |
 						npm install
-  build:
-    docker:
-      - image: circleci/node:12.14.1
-    steps:
+	build:
+		docker:
+			- image: circleci/node:12.14.1
+		steps:
 			- checkout
 			- run:
 					name: npm build
