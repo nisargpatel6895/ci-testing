@@ -6,8 +6,9 @@ jobs:
 			-image: circleci/node:12.14.1
 		steps:
 			-checkout
-			-run: npm install
-      -run: npm test
+			-run: 
+				command: |
+					echo "Hello World"
 
 workflow:
 	version: 2
