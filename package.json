@@ -1,0 +1,26 @@
+{
+  "name": "ci-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "skectch.test.js",
+  "dependencies": {
+    "jest": "^25.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nisargpatel6895/ci-testing.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Nisarg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nisargpatel6895/ci-testing/issues"
+  },
+  "homepage": "https://github.com/nisargpatel6895/ci-testing#readme"
+}
