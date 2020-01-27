@@ -8,7 +8,10 @@ jobs:
       - checkout # check out source code to working directory
       - run:
           name: npm build
-          command: npm install | npm test
+					command: npm install
+			- run:
+					name: npm test
+					command: npm test
   build:
     docker:
       - image: circleci/node:12.14.1
@@ -16,9 +19,10 @@ jobs:
       - checkout # check out source code to working directory
       - run:
           name: npm build
-          command: |
-						npm install
-						npm test
+					command: npm install
+			- run:
+					name: npm test
+					command: npm test
 workflows:
   version: 2
   pr-check-workflow:
