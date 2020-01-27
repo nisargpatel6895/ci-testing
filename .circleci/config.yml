@@ -9,7 +9,8 @@ jobs:
       - run:
           name: npm build
           command: |
-            npm install
+						npm install
+						npm test
   build:
     docker:
       - image: circleci/node:12.14.1
@@ -18,7 +19,8 @@ jobs:
       - run:
           name: npm build
           command: |
-            echo "Hello World!"
+						npm install
+						npm test
 workflows:
   version: 2
   pr-check-workflow:
