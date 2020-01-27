@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout # check out source code to working directory
       - run:
-          name: npm build
+					name: npm build
 					command: |
 						npm install
   build:
@@ -16,11 +16,9 @@ jobs:
     steps:
       - checkout # check out source code to working directory
       - run:
-          name: npm build
-					command: npm install
-			- run:
-					name: npm test
-					command: npm test
+					name: npm build
+					command: |
+						npm install
 workflows:
   version: 2
   pr-check-workflow:
