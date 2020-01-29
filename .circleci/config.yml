@@ -24,10 +24,6 @@ jobs:
       # run tests!
       - run: npm test
   build:
-    filters:
-      branches:
-        only:
-        - master
     docker:
       - image: circleci/node:12.14.1
     working_directory: ~/repo
@@ -56,4 +52,8 @@ workflows:
     - pr_check_workflow
   build:
     jobs:
-    - build
+    - build:
+      filters:
+        branches:
+          only:
+          -master
