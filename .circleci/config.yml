@@ -49,7 +49,11 @@ workflows:
   version: 2
   pr-check-workflow:
     jobs:
-    - pr_check_workflow
+    - pr_check_workflow:
+        filters:
+          branches:
+            ignore:
+            - master
   build:
     jobs:
     - build:
