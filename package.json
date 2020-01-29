@@ -2,12 +2,13 @@
   "name": "ci-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "skectch.test.js",
+  "main": "skectch.js",
   "dependencies": {
     "jest": "^25.1.0"
   },
   "devDependencies": {},
   "scripts": {
+    "build": "npm install",
     "test": "jest"
   },
   "repository": {
